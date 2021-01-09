@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.weatherBox {
+    min-width: fit-content;
+    min-height: 300px;
+    background-color: black;
+    border: solid 1px #555;
+    border-radius: 25px;
+    box-shadow: 1px 1px 2px whitesmoke;
+    /* -moz-box-shadow: 0 0 30px whitesmoke;
+    -webkit-box-shadow: 0 0 30px whitesmoke;
+    -o-box-shadow: 0 0 30px whitesmoke; */
+    padding: 20px;
+}
+
+.titleContainer {
+  display: flex;
+}
+
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.boxContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 60px;
+}
+
+#icon {
+  border: solid 1px #555;
+  border-radius: 10px;
+  background-color: rgba(204, 204, 204, 0.678);
+  box-shadow: inset  1px -1px 5px rgba(0,0,0,0.6);
+  -moz-box-shadow: inset  1px -1px 5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: inset  1px -1px 5px rgba(0,0,0,0.6);
+  -o-box-shadow: inset  1px -1px 5px rgba(0,0,0,0.6);
+  align-self: center;
+}
+
+
+p {
+    font-size: 1.7em;
+}
+
+
+/* Input field */
+.inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    height: 53px;
+  }
+
+  .inp input {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 0;
+    height: 48px;
+    font-size: 32px;
+    font-weight: 500;
+    background: none;
+    border-radius: 0;
+    color: whitesmoke;
+    transition: all 0.15s ease;
+  }
+  .inp input:focus {
+    outline: none;
+  }
+
+  ::placeholder {
+    color: grey;
+  }
